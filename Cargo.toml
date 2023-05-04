@@ -1,0 +1,14 @@
+[package]
+name = "dictgen2"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "dictgen2"
+crate-type = ["cdylib"]
+
+[dependencies]
+anyhow = "1.0.71"
+pyo3 = { version = "0.18.3", features = ["extension-module"] }
+rand = "0.8.5"
